@@ -1,4 +1,7 @@
 # flask-app-for-mxnet-img-classifier
+
+[Demo](http://side-1.seekingqed.com)
+
 A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
 This app simply invoked the [pre-trained model](http://mxnet.io/tutorials/python/predict_image.html) provided by MXNet community. 
