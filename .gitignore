@@ -1,0 +1,7 @@
+*.pyc
+*.params
+*.json
+synset.txt
+static/img_pool/*.jpg
+static/img_pool/*.png
+static/img_pool/*.jpeg

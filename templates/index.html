@@ -1,0 +1,67 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+ <div class="well"> 
+<ul class="nav nav-tabs"> 
+<li class="active"><a href="#by_uploadding" data-toggle="tab" aria-expanded="true">Upload Image</a></li>
+<li class=""><a href="#by_url" data-toggle="tab" aria-expanded="false">Enter Image URL</a></li>
+</ul>
+
+<div id="myTabContent" class="tab-content">
+<div class="tab-pane fade active in" id="by_uploadding">
+    <form method='post' action='/upload_image' enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
+        <p>Only extensions 'png', 'jpg', 'jpeg', and 'bmp' are supported.</p>
+    </form>
+</div>
+<div class="tab-pane fade" id="by_url">
+ <form action="/" method="POST">
+    <div class="form-group">
+      <label for="image_url">Image URL:</label>
+      <input type="text" class="form-control" id="image_url" placeholder="Enter the URL of the image" name="img_url">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  <p>Try to enter URL "<u><i>http://www.freepngimg.com/download/lion/3-2-lion-png.png</i></u>" and click "Submit". </p>
+</div>
+</div>
+
+</div>
+
+{% if img_src %}
+<div class="well">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-7">
+  {% if prediction_result %}
+    <table class = "table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Probability</th>
+      </tr>
+    </thead>
+    {% for item, prob in prediction_result %}
+      <tr>
+        <td> {{ item }} </td>
+        <td> {{ prob }} </td>
+      </tr>
+    {% endfor %}
+    </table>
+  {% endif %}
+   </div>
+  
+   <div class="col-lg-5">
+     {% if img_src %}
+      <img src="{{img_src}}" class="img-rounded" width="85%">
+     {% endif %}
+   </div>
+
+
+</div>
+ </div>
+</div>
+{% endif %}
+{% endblock %}
