@@ -1,6 +1,6 @@
 # flask-app-for-mxnet-img-classifier
 
-[Demo](http://side-1.seekingqed.com)
+[**Demo**](http://side-1.seekingqed.com)
 
 A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
