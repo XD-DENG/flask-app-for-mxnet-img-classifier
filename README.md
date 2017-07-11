@@ -1,7 +1,7 @@
 # flask-app-for-mxnet-img-classifier
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/XD-DENG/flask-app-for-mxnet-img-classifier/master/static/img/screenshot.png" alt="Drawing" style="width:70%;"/>
+<img src="https://raw.githubusercontent.com/XD-DENG/flask-app-for-mxnet-img-classifier/master/static/img/screenshot.png" alt="Drawing" style="width:40%;"/>
 </p>
 
 [**Demo**](http://side-1.seekingqed.com)
