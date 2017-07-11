@@ -10,26 +10,19 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span class="icon-bar"> </span><span class="icon-bar"> </span><span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">MXNet Image Classifier</a>
         </div>
-
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <li><a href="/">Home</a></li>
             <li><a href="/about/">About</a></li>
         </ul>
-	 <ul class="nav navbar-nav navbar-right">
+	       <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="http://flask.pocoo.org/">
-                        <img src="http://flask.pocoo.org/static/badges/made-with-flask-s.png"
-                           border="0" height=25
-                           alt="Flask powered"
-                           title="Flask powered">
-                        </a>
+                        <img src="http://flask.pocoo.org/static/badges/made-with-flask-s.png" border="0" height=25 alt="Flask powered" title="Flask powered"></a>
                     </li>
          </ul>	
   </div>                    
@@ -37,13 +30,8 @@
 </nav>
 
 <div class="container">
-<body>
-	{% block body %}{% endblock %}
-</body>
+<body>{% block body %}{% endblock %}</body>
 <hr>
-<footer>
-Develped by <a href="http://seekingqed.com">XD-DENG</a>
-</footer>
+<footer>Develped by <a href="http://seekingqed.com">XD-DENG</a></footer>
 </div>
-
 </html>
