@@ -4,7 +4,7 @@
 <img src="https://raw.githubusercontent.com/XD-DENG/flask-app-for-mxnet-img-classifier/master/static/img/screenshot.png" alt="Drawing" style="width:40%;"/>
 </p>
 
-[**Demo**](http://35.185.186.83)
+[**Demo**](http://side-1.seekingqed.com)
 
 A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
