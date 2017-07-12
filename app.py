@@ -75,6 +75,18 @@ def mx_predict(file_location, local=False):
 
 
 ################################################
+# Functions for Image Archive
+################################################
+
+def FUN_resize_img(filename, resize_proportion = 0.3):
+    '''
+    FUN_resize_img() will resize the image passed to it as argument to be {resize_proportion} of the original size.
+    '''
+    img=cv2.imread(filename)
+    small_img = cv2.resize(img, (0,0), fx=resize_proportion, fy=resize_proportion)
+    cv2.imwrite(filename, small_img)
+
+################################################
 # Functions Building Endpoints
 ################################################
 
@@ -118,6 +130,7 @@ def FUN_upload_image():
             filename = os.path.join("static/img_pool", hashlib.sha256(str(datetime.datetime.now())).hexdigest() + secure_filename(file.filename).lower())
             file.save(filename)
             prediction_result = mx_predict(filename, local=True)
+	    FUN_resize_img(filename)
             return render_template("index.html", img_src = filename, prediction_result = prediction_result)
     return(redirect(url_for("FUN_root")))
 
