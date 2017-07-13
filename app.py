@@ -15,6 +15,14 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024
 
 
+################################################
+# Error Handling
+################################################
+
+@app.errorhandler(405)
+def FUN_405(error):
+    return redirect(url_for("FUN_root")), 405
+
 
 
 ################################################
