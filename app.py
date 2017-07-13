@@ -19,10 +19,17 @@ app.config['MAX_CONTENT_LENGTH'] = 5 * 1024 * 1024
 # Error Handling
 ################################################
 
+@app.errorhandler(404)
+def FUN_404(error):
+    return render_template("error.html")
+
 @app.errorhandler(405)
 def FUN_405(error):
-    return redirect(url_for("FUN_root")), 405
+    return render_template("error.html")
 
+@app.errorhandler(500)
+def FUN_500(error):
+    return render_template("error.html")
 
 
 ################################################
