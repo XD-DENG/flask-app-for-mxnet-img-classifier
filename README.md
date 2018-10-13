@@ -10,18 +10,23 @@ A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
 This app simply invoked the [pre-trained model](http://mxnet.io/tutorials/python/predict_image.html) provided by MXNet community. 
 
+## Deployment Using Docker
+
+```bash
+docker run -p 80:8000 xddeng/flask-app-for-mxnet-img-classifier:v1
+```
+
 ## Deployment
 
 ### Step - 1: Environment
 ```bash
 sudo yum install python-pip
 sudo yum install git
-
-sudo pip install Flask
 sudo yum install numpy opencv*
-sudo pip install mxnet
 
-sudo pip install gunicorn
+pip install Flask
+pip install mxnet
+pip install gunicorn
 ```
 
 ### Step - 2: Clone This Project
@@ -43,5 +48,5 @@ Note that we need to put all these three files under application directory.
 ### Step - 4: Start Service
 
 ```bash
-sudo gunicorn -b 0.0.0.0:80 app:app
+gunicorn -b 0.0.0.0:80 app:app
 ```
