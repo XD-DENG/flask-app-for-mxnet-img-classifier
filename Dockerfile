@@ -4,14 +4,13 @@ WORKDIR /app
 
 COPY . /app
 
+# Install pip
 RUN curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-RUN yum -y install gcc
 RUN python get-pip.py
-RUN pip install Flask
-RUN pip install numpy
+
+RUN yum -y install gcc
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
 RUN yum -y install opencv*
-RUN pip install mxnet
-RUN pip install gunicorn
 
 RUN curl "http://data.mxnet.io/models/imagenet-11k/resnet-152/resnet-152-symbol.json" -o "resnet-152-symbol.json"
 RUN curl "http://data.mxnet.io/models/imagenet-11k/resnet-152/resnet-152-0000.params" -o "resnet-152-0000.params"

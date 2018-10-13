@@ -10,11 +10,13 @@ A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
 This app simply invoked the [pre-trained model](http://mxnet.io/tutorials/python/predict_image.html) provided by MXNet community. 
 
+
 ## Deployment Using Docker
 
 ```bash
-docker run -p 80:8000 xddeng/flask-app-for-mxnet-img-classifier:v1
+docker run -p 80:8000 xddeng/flask-app-for-mxnet-img-classifier:v2
 ```
+
 
 ## Deployment
 
