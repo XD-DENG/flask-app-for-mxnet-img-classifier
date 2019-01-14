@@ -20,8 +20,8 @@ pygobject==3.22.0
 pygpgme==0.3
 pyliblzma==0.5.3
 pyxattr==0.5.1
-requests==2.18.4
+requests>=2.20.0
 urlgrabber==3.10
-urllib3==1.22
+urllib3>=1.23
 Werkzeug==0.14.1
 yum-metadata-parser==1.1.4
