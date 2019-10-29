@@ -22,6 +22,6 @@ pyliblzma==0.5.3
 pyxattr==0.5.1
 requests==2.18.4
 urlgrabber==3.10
-urllib3==1.22
+urllib3==1.24.2
 Werkzeug==0.15.3
 yum-metadata-parser==1.1.4
