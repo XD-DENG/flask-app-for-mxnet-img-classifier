@@ -4,7 +4,6 @@
 <img src="https://raw.githubusercontent.com/XD-DENG/flask-app-for-mxnet-img-classifier/master/static/img/screenshot.png" alt="Drawing" style="width:40%;"/>
 </p>
 
-[**Demo**](http://side-1.seekingQED.com)
 
 A Flask (Python) Web Interface for [MXNet](http://mxnet.io/) Image Classifier.
 
@@ -14,8 +13,10 @@ This app simply invoked the [pre-trained model](http://mxnet.io/tutorials/python
 ## Deployment Using Docker
 
 ```bash
-docker run -p 80:8000 xddeng/flask-app-for-mxnet-img-classifier:v2
+docker run -p 8000:8000 xddeng/flask-app-for-mxnet-img-classifier:v2
 ```
+
+Now you can try to access the service at http://localhost:8000
 
 
 ## Deployment
