@@ -1,4 +1,4 @@
-# flask-app-for-mxnet-img-classifier
+# Image Classifier Written with MXNet + Flask
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/XD-DENG/flask-app-for-mxnet-img-classifier/master/static/img/screenshot.png" alt="Drawing" style="width:40%;"/>
